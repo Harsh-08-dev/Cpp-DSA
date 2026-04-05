@@ -34,7 +34,7 @@ int main()
 }
 */
 
-// method 2
+// method 2 ordered map
 
 int main()
 {
@@ -48,13 +48,17 @@ int main()
         cin >> arr[i];
     }
 
-    map<long int, int> mpp;
+    map<long int, int> mpp; // unordered_map in place of map will convert it into an ordered map
     for (int i = 0; i < n; i++)
     {
-        mpp[arr[i]]++;
+        mpp[arr[i]]++; // it can be done while creating the array too
     }
     cout << "Hash Map created" << endl;
-
+    // iterating the map
+    for (auto it : mpp)
+    {
+        cout << it.first /*key*/ << " -> " << it.second /*value*/;
+    }
     int number;
     cout << "Enter the number: ";
     cin >> number;
