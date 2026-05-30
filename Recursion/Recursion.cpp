@@ -8,7 +8,7 @@ int main()
     void func1(x)
     {
         x = x - 1 cout << "Hello";
-        void func1(x - 1);
+        void func1(x - 2);
     }
     return 0;
 }
